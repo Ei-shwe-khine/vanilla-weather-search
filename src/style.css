@@ -1,0 +1,88 @@
+body {
+    font-family: arial, sans-serif;
+}
+.open-source-code{
+max-width: 600px;
+margin: 30px auto;
+
+
+}
+
+.weather-app{
+
+    width: 650px;
+    height: 300px;
+
+   margin-bottom: 0;
+    padding: 30px;
+
+    border: 1px solid #dadde1;
+    border-radius: 5px;
+}
+h1{
+    color: #878787;
+    font-weight: 100;
+    line-height: 28px;
+    margin-bottom: 20px;
+
+}
+.clearfix weather-temp{
+
+    width: 200px;
+    margin-right: auto;
+}
+.weather-temp img {
+
+    margin-right: 6px;
+    height: 64px;
+    width: 64px;
+}
+
+.weather-temp strong {
+
+    margin-right: -20px;
+    color: rgb(33, 33, 33);
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 350;
+
+}
+
+.weather-temp .units {
+
+    position: relative;
+    display: inline-block;
+
+
+    margin-top: 6px;
+    padding-left: 10px;
+    top: -34px;
+}
+#weather-condition{
+
+    font-size:12px ;
+    color: #70757a;
+    margin-left: -100px;
+    padding-right: -20px;
+}
+ul{
+    margin-left: 0;
+}
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+  
+}
+#date{
+       
+    margin-left: 80px;
+   padding: 0;
+}
+h5{
+    margin-left: 35px;
+}
+.day{
+    color:#70757a;
+}
