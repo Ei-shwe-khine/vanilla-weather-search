@@ -1,6 +1,27 @@
+function formatDate(timestamp) {
+    
+    let date = new Date(timestamp);
+    let hours = date.getHours();
+    if (hours < 10) {
+        hours = `0${hours}`;
+    }
+    let minutes = date.getMinutes();
+
+    if (minutes < 10) {
+        minutes = `0${minutes}`;
+    }
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    let day = days[date.getDay()];
+
+    //calculate the date
+    return `${day} ${hours} : ${minutes}`;
+}
+
+
 function displayTemperature(response) {
     
-    console.log(response.data);
+   
     let temperatureElement = document.querySelector("#temperature");
     temperatureElement.innerHTML = Math.round(response.data.main.temp);
 
@@ -16,11 +37,14 @@ function displayTemperature(response) {
     let windElement = document.querySelector("#wind");
     windElement.innerHTML =Math.round(response.data.wind.speed);
 
+    let dateElement = document.querySelector("#date");
+    dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
 }
 
 
 
 let apiKey = "6655e6104636a644c9bc754d824a695d";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`;
+let city = "Myanmar";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayTemperature);
