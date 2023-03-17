@@ -23,6 +23,7 @@ h1{
     color: #878787;
     font-weight: 100;
     line-height: 28px;
+   
     margin-bottom: 20px;
 
 }
@@ -34,15 +35,15 @@ h1{
 .weather-temp img {
 
     margin-right: 6px;
-    height: 64px;
-    width: 64px;
+    height: 69px;
+    width: 67px;
 }
 
 .weather-temp strong {
 
     margin-right: -20px;
     color: rgb(33, 33, 33);
-    font-size: 64px;
+    font-size: 60px;
     line-height: 1;
     font-weight: 350;
 
@@ -55,14 +56,14 @@ h1{
 
 
     margin-top: 6px;
-    padding-left: 10px;
+    padding-left: 20px;
     top: -34px;
 }
 #weather-condition{
 
     font-size:12px ;
     color: #70757a;
-    margin-left: -100px;
+    margin-left: -120px;
     padding-right: -20px;
 }
 ul{
