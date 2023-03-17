@@ -70,7 +70,7 @@ function displayFahrenheitTemperature(event) {
 
     let temperatureElement = document.querySelector("#temperature");
 
-    //remove the active class the clsius link
+    //remove the active class the clsius link..
     celsiusLink.classList.remove("active");
     fahrenheitLink.classList.add("active");
 
@@ -81,9 +81,10 @@ function displayFahrenheitTemperature(event) {
 function displayCelsiusTemperature(event) {
     event.preventDefault();
 
+    //remove the active class the fahrenheit link...
     celsiusLink.classList.add("active");
     fahrenheitLink.classList.remove("active");
-    
+
     let temperatureElement = document.querySelector("#temperature");
     temperatureElement.innerHTML = Math.round(celsiusTemperature);
 
