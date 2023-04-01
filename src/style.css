@@ -1,7 +1,10 @@
 body {
     font-family: arial, sans-serif;
-  background-image: radial-gradient(pink, #6dd5ed, #6dd5ed);
-
+    background-image: url('/images/snow.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
 }
 
 
@@ -16,7 +19,7 @@ margin: 30px auto;
 
     width: 600px;
     height: 340px;
-
+   
    margin-top:0;
     padding: 10px;
 
@@ -35,7 +38,7 @@ margin: 30px auto;
 
     color: white;
     border-radius: 5px;
-    border: 1px solid #dadde1;
+    border: 1px solid #0069D9;
     cursor: pointer;
 
     
