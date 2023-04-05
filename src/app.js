@@ -157,5 +157,5 @@ form.addEventListener("submit", handleSubmit);
 
 
 
-search("New York");
+search("Thailand");
 displayForecast();
